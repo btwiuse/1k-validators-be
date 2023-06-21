@@ -65,7 +65,7 @@ export type ConfigSchema = {
   };
   global: {
     dryRun: boolean;
-    networkPrefix: 0 | 2 | 3;
+    networkPrefix: 0 | 2 | 3 | 137;
     test: boolean;
     retroactive: boolean;
     historicalNominations: boolean;

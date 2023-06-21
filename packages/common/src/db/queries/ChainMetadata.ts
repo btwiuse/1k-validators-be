@@ -7,6 +7,8 @@ export const setChainMetadata = async (networkPrefix: number): Promise<any> => {
       ? "Kusama"
       : networkPrefix == 0
       ? "Polkadot"
+      : networkPrefix == 137
+      ? "Vara"
       : "Local Testnet";
   const decimals = networkPrefix == 2 ? 12 : networkPrefix == 0 ? 10 : 12;
 

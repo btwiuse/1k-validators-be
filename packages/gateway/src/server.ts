@@ -44,7 +44,7 @@ export default class Server {
     );
 
     router.get("/healthcheck", (ctx) => {
-      const network = config.global.networkPrefix == 2 ? "Kusama" : "Polkadot";
+      const network = config.global.networkPrefix == 137 ? "Vara" : config.global.networkPrefix == 2 ? "Kusama" : "Polkadot";
       ctx.body = `${network} Thousand Validators`;
       ctx.status = 200;
     });

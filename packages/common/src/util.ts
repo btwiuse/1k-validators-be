@@ -66,7 +66,7 @@ export const formatAddress = (
   config: ConfigSchema
 ): string => {
   const keyring = new Keyring();
-  const ss58Prefix = config.global.networkPrefix == 2 ? 2 : 0;
+  const ss58Prefix = config.global.networkPrefix;
   return keyring.encodeAddress(address, ss58Prefix);
 };
 

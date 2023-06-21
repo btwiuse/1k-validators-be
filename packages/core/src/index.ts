@@ -40,6 +40,8 @@ export const createAPIHandler = async (config) => {
         ? config.global.apiEndpoints
         : config.global.networkPrefix == 0
         ? config.global.apiEndpoints
+        : config.global.networkPrefix == 137
+        ? config.global.apiEndpoints
         : Constants.LocalEndpoints;
     const handler = await ApiHandler.create(endpoints);
     return handler;
