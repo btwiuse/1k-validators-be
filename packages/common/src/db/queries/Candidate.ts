@@ -435,7 +435,7 @@ export const reportOnline = async (
         locationData && locationData?.city && !locationData?.vpn
           ? locationData?.city
           : "No Location",
-      networkId: null,
+      networkId,
       nodeRefs: 1,
       name,
       version,
