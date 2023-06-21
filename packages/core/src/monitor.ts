@@ -25,8 +25,8 @@ export default class Monitor {
 
     try {
       latestRelease = await this.ghApi.repos.getLatestRelease({
-        owner: "paritytech",
-        repo: "polkadot",
+        owner: "gear-tech",
+        repo: "gear",
       });
     } catch {
       logger.info(

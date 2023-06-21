@@ -13,8 +13,8 @@ export const getLatestTaggedRelease = async () => {
 
   try {
     latestRelease = await ghApi.repos.getLatestRelease({
-      owner: "paritytech",
-      repo: "polkadot",
+      owner: "gear-tech",
+      repo: "gear",
     });
   } catch {
     logger.warn("Could not get latest release.", monitorLabel);
