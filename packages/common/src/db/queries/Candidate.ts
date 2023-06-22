@@ -19,7 +19,7 @@ export const addCandidate = async (
 ): Promise<boolean> => {
   const network = (await getChainMetadata()).name;
   const keyring = new Keyring();
-  const ss58Prefix = network == "Kusama" ? 2 : 0;
+  const ss58Prefix = network == "Kusama" ? 2 : network == "Vara" ? 137 : 0;
   stash = keyring.encodeAddress(stash, ss58Prefix);
   // logger.info(
   //   `(Db::addCandidate) name: ${name} stash: ${stash} matrix: ${matrix}`

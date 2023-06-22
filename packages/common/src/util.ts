@@ -77,6 +77,8 @@ export const hex2a = (hex) => {
 export const subscanUrl = (config: ConfigSchema) => {
   return config.global.networkPrefix == 2
     ? "kusama.subscan.io"
+    : config.global.networkPrefix == 137
+    ? "vara.subscan.io"
     : "polkadot.subscan.io";
 };
 
