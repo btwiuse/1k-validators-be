@@ -5,6 +5,7 @@ import Nominator from "../controllers/Nominator";
 import Nomination from "../controllers/Nomination";
 import EraPoints from "../controllers/EraPoints";
 import Democracy from "../controllers/Democracy";
+import Release from "../controllers/Release";
 import Score from "../controllers/Score";
 import Stats from "../controllers/Stats";
 import Location from "../controllers/Location";
@@ -141,6 +142,8 @@ router.get(API.OpenGovVoter, Democracy.getOpenGovVoter);
 router.get(API.OpenGovDelegates, Democracy.getOpenGovDelegates);
 router.get(API.OpenGovDelegate, Democracy.getOpenGovDelegate);
 router.get(API.OpenGovTracks, Democracy.getOpenGovTracks);
+
+router.get(API.Release, Release.getLatestRelease);
 
 router.get(API.Score, Score.getScore);
 router.get(API.SessionScore, Score.getSessionScore);
