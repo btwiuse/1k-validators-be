@@ -3,6 +3,7 @@
     {
       "name": "CryptoVietLab",
       "stash": "kGkt6yGT1LmGWYnFoLJdtuuk8LbarJvwXCSGFiu9ivFG13mXx",
+      "skipSelfStake": true,
       "riotHandle": "@stub:matrix.org"
     }
   ]
