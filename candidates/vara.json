@@ -1,14 +1,9 @@
 {
   "candidates": [
     {
-      "name": "Blockshard",
-      "stash": "Cp4U5UYg2FaVUpyEtQgfBm9aqge6EEPkJxEFVZFYy7L1AZF",
-      "riotHandle": "@marc1104:matrix.org"
-    },
-    {
-      "name": "VALIDANDUM-IO | KSM | 02",
-      "stash": "GrerymxmcLpdjdTsPzRiC8xEb2VeLYjY4onWh7dib29RA57",
-      "riotHandle": "@validandum.io.lee:matrix.org"
+      "name": "stub",
+      "stash": "kGggVdmjUJL5oJhgmn4LA8KA4867EXuDt4cYmCSvysqRWyUwi",
+      "riotHandle": "@stub:matrix.org"
     }
   ]
 }
