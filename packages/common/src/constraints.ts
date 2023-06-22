@@ -242,9 +242,12 @@ export class OTV implements Constraints {
       );
     }
 
-    const identityValid = await checkIdentity(this.chaindata, candidate);
-    if (!identityValid) {
-      logger.warn(`${candidate.name} identity not valid`, constraintsLabel);
+    let identityValid = true;
+    if (!this.skipIdentity) {
+      identityValid = await checkIdentity(this.chaindata, candidate);
+      if (!identityValid) {
+	logger.warn(`${candidate.name} identity not valid`, constraintsLabel);
+      }
     }
 
     const offlineValid = await checkOffline(candidate);
