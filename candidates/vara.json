@@ -1,6 +1,12 @@
 {
   "candidates": [
     {
+      "name": "VARAN",
+      "stash": "kGhxAkgEraid83wXjfRL2gQEahxYY2VcUVP1Us9UzkUEVwuHU",
+      "skipSelfStake": true,
+      "riotHandle": "@varan:matrix.org"
+    },
+    {
       "name": "CryptoVietLab",
       "stash": "kGkt6yGT1LmGWYnFoLJdtuuk8LbarJvwXCSGFiu9ivFG13mXx",
       "skipSelfStake": true,
