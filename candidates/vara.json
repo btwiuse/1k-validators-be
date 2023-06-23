@@ -1,6 +1,12 @@
 {
   "candidates": [
     {
+      "name": "000herr",
+      "stash": "kGm9advPW8FVJQVnvTwB7ijbd37Es1CReCcdJy5EAJFLF5mPu",
+      "skipSelfStake": true,
+      "riotHandle": "@herr:matrix.org"
+    },
+    {
       "name": "VARAN",
       "stash": "kGhxAkgEraid83wXjfRL2gQEahxYY2VcUVP1Us9UzkUEVwuHU",
       "skipSelfStake": true,
