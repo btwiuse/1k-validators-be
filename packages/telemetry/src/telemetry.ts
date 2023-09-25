@@ -271,7 +271,7 @@ export default class TelemetryClient {
 
   private async _subscribe(chain: string, finality = true) {
     if (this.config.telemetry.chains.includes(chain)) {
-      this.socket.send(`ping:${chain}`);
+      this.socket.send(`ping:1`);
       this.socket.send(`subscribe:${chain}`);
       logger.info(`Subscribed to ${chain}`, {
         label: "Telemetry",
