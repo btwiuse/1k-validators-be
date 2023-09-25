@@ -12,3 +12,6 @@ mongo-express:
 
 dbui:
 	ufo teleport https://ufo.k0s.io http://localhost:8080
+
+docker:
+	docker build --build-arg PACKAGE=core .
