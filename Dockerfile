@@ -1,6 +1,6 @@
 FROM btwiuse/arch:ufo AS ufo
 
-FROM node:18-slim AS builder
+FROM btwiuse/arch:node-18 AS builder
 ARG MATRIX_TOKEN
 ARG PACKAGE=core
 ENV PACKAGE ${PACKAGE}
